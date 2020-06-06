@@ -34,20 +34,75 @@ html {
   margin: 0 auto;
 }
 
+section {
+  padding: 80px 0px;
+}
 
+.box {
+  padding: 1%;
+}
 
 /* ------ HEADINGS ------ */
 
-h1 {
-  font-size: 240%;
+h1, 
+h2,
+h3 {
   font-weight: 300;
-  color: #fff;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 240%;
+  color: #fff;
   word-spacing: 3px;
   margin-bottom: 30px;
 }
 
+h2 {
+  font-style: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+
+}
+
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
+h2::after {
+  display: block;
+  height: 2px;
+  background-color: #e67e22;
+  content: "";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+/* ------ PARAGRAPHS ------ */
+.long-copy {
+  line-height: 145%;
+  width: 70%;
+  text-align: center;
+  margin: auto;
+}
+
+.box p {
+  font-size: 90%;
+  line-height: 145%;
+}
+
+/* ------ ICONS ------ */
+.icon-big {
+  font-size: 300%;
+  display: block;
+  color: #e67e22;
+  margin-bottom: 10px;
+}
 
 /* ------ BUTTONS ------ */
 
@@ -145,3 +200,49 @@ header {
 .main-nav li a:hover, 
 .main-nav li a:active {
   border-bottom: 2px solid #e67e22;
+}
+
+/* -------------------------------------------------------------- */
+/* FEATURES */
+/* -------------------------------------------------------------- */
+
+.section-features .long-copy {
+  margin-bottom: 40px;
+}
+
+
+
+/* -------------------------------------------------------------- */
+/* MEALS */
+/* -------------------------------------------------------------- */
+.meals-showcase {
+  list-style: none;
+  width: 100%;
+  padding-top: 200px;
+}
+
+.meals-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}  
+ 
+.meal-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+.meal-photo img {
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+  transform: scale(1.03);
+  opacity: 1;
+}

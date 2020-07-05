@@ -271,6 +271,7 @@ header {
 
 .section-steps {
   background-color: #f3f3f3;
+  height: 800px;
 }
 
 .steps-box:first-child {

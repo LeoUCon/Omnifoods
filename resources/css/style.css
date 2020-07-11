@@ -4,11 +4,9 @@ orange color #e67e22
 
 */
 
-
 /* -------------------------------------------------------------- */
 /* BASIC SETUP */
 /* -------------------------------------------------------------- */
-
 
 * {
   margin: 0;
@@ -26,7 +24,7 @@ html {
 }
 
 .clearfix {
-  zoom: 1
+  zoom: 1;
 }
 .clearfix:after {
   content: ".";
@@ -50,12 +48,12 @@ section {
 }
 
 .box {
-  padding: 1%; 
+  padding: 1%;
 }
 
 /* ------ HEADINGS ------ */
 
-h1, 
+h1,
 h2,
 h3 {
   font-weight: 300;
@@ -77,7 +75,6 @@ h2 {
   word-spacing: 2px;
   text-align: center;
   margin-bottom: 30px;
-
 }
 
 h3 {
@@ -123,10 +120,30 @@ h2::after {
   color: #e67e22;
   font-size: 120%;
 
+  /* secrets to align text and icons */
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -6px;
+  margin-right: 6px;
+}
+
+/* ------ LINKS ------ */
+a:link,
+a:visited {
+  color: #e67e22;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #e67e22;
+  transition: border-bottom 0.2s, color 0.2;
+}
+
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
 }
 
 /* ------ BUTTONS ------ */
-
 
 .btn:link,
 .btn:visited {
@@ -144,11 +161,11 @@ h2::after {
   border: 1px solid #e67e22;
   color: #fff;
   margin-right: 15px;
-  transition: background-color 0.2s, border 0.2s, color 0.2s ;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
 .btn-ghost:link,
-.btn-ghost:visited  {
+.btn-ghost:visited {
   border: 1px solid #e67e22;
   color: #e67e22;
 }
@@ -164,7 +181,7 @@ h2::after {
 }
 
 .btn-ghost:hover,
-.btn-ghost:active  {
+.btn-ghost:active {
   border: 1px solid #cf6d17;
   color: #ffffff;
 }
@@ -180,7 +197,7 @@ header {
   background-position: center;
   height: 100vh;
 }
-  
+
 .hero-text-box {
   position: absolute;
   width: 1140px;
@@ -207,7 +224,7 @@ header {
   margin-left: 40px;
 }
 
-.main-nav li a:link, 
+.main-nav li a:link,
 .main-nav li a:visited {
   padding: 6px 0;
   color: #fff;
@@ -215,10 +232,10 @@ header {
   text-transform: uppercase;
   font-size: 90%;
   border-bottom: 2px solid transparent;
-  transition: border-bottom 0.2s ;
+  transition: border-bottom 0.2s;
 }
 
-.main-nav li a:hover, 
+.main-nav li a:hover,
 .main-nav li a:active {
   border-bottom: 2px solid #e67e22;
 }
@@ -231,28 +248,22 @@ header {
   margin-bottom: 40px;
 }
 
-
-
 /* -------------------------------------------------------------- */
 /* MEALS */
 /* -------------------------------------------------------------- */
 
-
-
 .meals-showcase {
   list-style: none;
   width: 100%;
-  padding-top: 200px ;
-  
+  padding-top: 200px;
 }
-
 
 .meals-showcase li {
   display: block;
   float: left;
   width: 25%;
-}  
- 
+}
+
 .meal-photo {
   width: 100%;
   margin: 0;
@@ -273,7 +284,6 @@ header {
   opacity: 1;
 }
 
-
 /* -------------------------------------------------------------- */
 /* HOW IT WORKS */
 /* -------------------------------------------------------------- */
@@ -286,12 +296,11 @@ header {
 .steps-box:first-child {
   text-align: right;
   padding-right: 3%;
-  margin-top: 30px; 
+  margin-top: 30px;
 }
 
 .steps-box:last-child {
   margin-top: 40px;
-
 }
 
 .app-screen {
@@ -301,8 +310,6 @@ header {
 .works-step {
   margin: 30px;
 }
-
-
 
 .works-step div {
   color: #e67e22;
@@ -316,7 +323,11 @@ header {
   float: left;
   font-size: 150%;
   margin-right: 20px;
+}
 
+.btn-app:link,
+.btn-app:visited {
+  border: 0;
 }
 
 .btnap {
@@ -330,12 +341,10 @@ header {
   margin-right: 10px;
 }
 
-
-
 /* -------------------------------------------------------------- */
 /* CITIES */
 /* -------------------------------------------------------------- */
-.cities-photo img{
+.cities-photo img {
   width: 100%;
   overflow: hidden;
   margin-bottom: 15px;
@@ -343,4 +352,14 @@ header {
 
 .city-feature {
   margin-bottom: 5px;
+}
+
+
+/* -------------------------------------------------------------- */
+/*  TESTIMONIALS */
+/* -------------------------------------------------------------- */
+
+.section-testimonials {
+  background-image: linear-gradient(rgba(0,0,0,0.0), #988898)url(img/back-customers.jpg);
+  background-size: cover;
 }

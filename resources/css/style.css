@@ -82,6 +82,8 @@ h3 {
   margin-bottom: 15px;
 }
 
+/* ------ SECTION TITLE DASH STYLE ------ */
+
 h2::after {
   display: block;
   height: 2px;
@@ -196,6 +198,7 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  background-attachment: fixed;
 }
 
 .hero-text-box {
@@ -255,7 +258,8 @@ header {
 .meals-showcase {
   list-style: none;
   width: 100%;
-  padding-top: 200px;
+  padding-top: 196px;
+  height: 300px;
 }
 
 .meals-showcase li {
@@ -267,6 +271,7 @@ header {
 .meal-photo {
   width: 100%;
   margin: 0;
+  padding: 0;
   overflow: hidden;
   background-color: black;
 }
@@ -289,8 +294,9 @@ header {
 /* -------------------------------------------------------------- */
 
 .section-steps {
-  background-color: #f3f3f3;
-  height: 800px;
+  background-color: #f4f4f4;
+  height: 720px;
+  margin-top: 159px;
 }
 
 .steps-box:first-child {
@@ -344,6 +350,10 @@ header {
 /* -------------------------------------------------------------- */
 /* CITIES */
 /* -------------------------------------------------------------- */
+.section-cities {
+  margin-bottom: 350px;
+}
+
 .cities-photo img {
   width: 100%;
   overflow: hidden;
@@ -354,12 +364,101 @@ header {
   margin-bottom: 5px;
 }
 
-
 /* -------------------------------------------------------------- */
 /*  TESTIMONIALS */
 /* -------------------------------------------------------------- */
 
 .section-testimonials {
-  background-image: linear-gradient(rgba(0,0,0,0.0), #988898)url(img/back-customers.jpg);
-  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/back-customers.jpg);
+  height: 500px;
+  color: #fff;
+  background-attachment: fixed;
+}
+
+blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 130%;
+  position: relative;
+}
+
+blockquote:before {
+  content: "\201C";
+  font-size: 70px;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -3px;
+}
+
+cite {
+  display: block;
+  font-size: 80%;
+  margin-top: 22px;
+}
+
+cite img {
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* -------------------------------------------------------------- */
+/*  SIGNUP */
+/* -------------------------------------------------------------- */
+
+.section-plans {
+  background-color: #f4f4f4;
+  height: 700px;
+}
+
+.plan-box {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.plan-box div {
+  padding: 15px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.plan-box div:first-child {
+  background-color: #fcfcfc;
+  border-radius: 5px ;
+}
+
+.plan-box div:last-child {
+  text-align: center;
+}
+
+.plan-price {
+  font-size: 300%;
+  margin-bottom: 30px;
+  font-weight: 100;
+  color: #e67e22;
+}
+
+.plan-price span {
+  font-size: 32%;
+  font-weight: 300;
+}
+
+.plan-price-meal {
+  font-size: 80%;
+}
+
+.plan-box ul {
+  list-style: none;
+}
+
+.plan-box ul li {
+  padding: 5px 0;
+}
+
+.plan-box a {
+  margin-top: 20px;
 }

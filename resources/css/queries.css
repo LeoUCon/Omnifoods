@@ -84,7 +84,7 @@
 
     .row, .hero-text-box{padding: 0 4%;}
     .col {
-        margin: 0% 0 1% 0%;
+        margin: 0% 0 2% 0%;
         width: 100%;
     }
 
@@ -176,5 +176,16 @@
     .contact-form{ width: 100%;}
     section { margin: 0, 29px;}
 
+    .section-steps {
+        margin-top: 176px;
+      }
+
+    .section-form { height: 220px;}
+
+    .section-testimonials .col {
+        padding-top: 20px;
+    }
+
+    .section-testimonials {height: 700px;}
 
 }

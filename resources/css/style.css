@@ -261,10 +261,16 @@ header {
 /* MEALS */
 /* -------------------------------------------------------------- */
 
+.section-meals h3{
+  margin-top: 300px;
+  text-align: center;
+  padding:0;
+}
+
 .meals-showcase {
   list-style: none;
   width: 100%;
-  padding-top: 196px;
+  padding-top: 16px;
   height: 300px;
 }
 
@@ -302,7 +308,7 @@ header {
 .section-steps {
   background-color: #f4f4f4;
   height: 720px;
-  margin-top: 159px;
+  margin-top: -18px;
 }
 
 .steps-box:first-child {

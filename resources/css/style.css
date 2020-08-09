@@ -513,12 +513,7 @@ input[type=checkbox] {
 footer {
   margin-top: 400px;
   background-color: #333;
-
   height: 150px;
-}
-
-footer:last-child {
-  margin-top: 50px;
 }
 
 .footer-nav-link {
@@ -526,7 +521,6 @@ footer:last-child {
   float: left;
   width: 991px;
   padding-top: 20px;
-  
 
 }
 
@@ -540,7 +534,6 @@ footer:last-child {
 .footer-nav-link li,
 .social-link li {
   display: inline-block;
-  
   margin-right: 15px;
   
 

@@ -53,7 +53,7 @@ section {
   padding: 1%;
 }
 
-/* ------ HEADINGS ------ */
+------ HEADINGS ------
 
 h1,
 h2,
@@ -218,7 +218,6 @@ header {
 .logo {
   height: 100px;
   width: auto;
-  float: left;
   margin-top: 20px;
 }
 
